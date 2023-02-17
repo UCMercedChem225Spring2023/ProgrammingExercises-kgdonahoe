@@ -78,9 +78,9 @@
 !
 !     Do the printing job.
 !
-      write(*,*)' Printing Matrix',matrix
+      write(*,*)'Printing matrix'
+      write(*,1000)matrix
 !
-!      write(*,1000)matrixInA
 !
 !
       return

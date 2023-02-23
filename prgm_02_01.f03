@@ -45,11 +45,11 @@
       tMatrixElement = PIB_1D_T_Element(n1,n2,l,m)
 
       write(*,2000)n1,n2,tMatrixElement
-<<<<<<< HEAD
+
  999 continue  
-=======
- 999  continue  
->>>>>>> refs/remotes/origin/main
+
+  
+
 
       end program prgm_02_01
 

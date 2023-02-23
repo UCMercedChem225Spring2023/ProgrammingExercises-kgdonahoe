@@ -40,28 +40,33 @@
       read(cmd_buffer,*) n1
       call Get_Command_Argument(4,cmd_buffer)
       read(cmd_buffer,*) n2
+
 !     evaluate matrix element 
       tMatrixElement = PIB_1D_T_Element(n1,n2,l,m)
 
       write(*,2000)n1,n2,tMatrixElement
+<<<<<<< HEAD
  999 continue  
+=======
+ 999  continue  
+>>>>>>> refs/remotes/origin/main
 
-     end program prgm_02_01
+      end program prgm_02_01
 
-     Real Function PIB_1D_T_Element(n1,n2,l,m)
-     implicit none
-     real,parameter::pi=3.1415926
-     integer,intent(in)::n1,n2
-     real,intent(in)::m,l
-     real::prefactor
+      Real Function PIB_1D_T_Element(n1,n2,l,m)
+      implicit none
+      real,parameter::pi=3.1415926
+      integer,intent(in)::n1,n2
+      real,intent(in)::m,l
+      real::prefactor
 
-     prefactor=((pi**2)/(2*m*(l**2)))
+      prefactor=((pi**2)/(2*m*(l**2)))
   
-     if(n1==n2) then
-       PIB_1D_T_Element= (n1**2)*prefactor
-     else
-       PIB_1D_T_Element=0
-     endif
-     return
-     end Function PIB_1D_T_Element
+      if(n1==n2) then
+        PIB_1D_T_Element= (n1**2)*prefactor
+      else
+        PIB_1D_T_Element=0
+      endif
+      return
+      end Function PIB_1D_T_Element
 

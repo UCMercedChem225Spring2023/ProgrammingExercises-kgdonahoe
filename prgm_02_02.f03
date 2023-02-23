@@ -9,7 +9,7 @@
 !     Format statements
 
  2000 format(1X,'Potential energy matrix element',I5,',',I5,' is ',F12.5,'.')
- 9000 format (1X,'Expected 4 command line arguments, but found ',i2,'.')
+ 9000 format (1X,'Expected 5 command line arguments, but found ',i2,'.')
 
 
 

@@ -41,9 +41,9 @@
       call Get_Command_Argument(4,cmd_buffer)
       read(cmd_buffer,*) n2
 !     evaluate matrix element 
-     tMatrixElement = PIB_1D_T_Element(n1,n2,l,m)
+      tMatrixElement = PIB_1D_T_Element(n1,n2,l,m)
 
-     write(*,2000)n1,n2,tMatrixElement
+      write(*,2000)n1,n2,tMatrixElement
  999 continue  
 
      end program prgm_02_01

@@ -73,16 +73,19 @@
 
      Real Function PIB_1D_Modified_V_Element(n1,n2,l,b)
      implicit none
-!     real,parameter::pi=3.1415926
-     integer,intent(in)::n1,n2
-     real,intent(in)::l,b  
+     real,parameter::pi=3.1415926
+     integer::n1,n2
+     real::l,b  
      if(n1==n2) then
        PIB_1D_Modified_V_Element= b*l/2
-     else
+     else if(modulo(n1+n2,2)==0) then
        PIB_1D_Modified_V_Element= 0
+     else
+       PIB_1D_Modified_V_Element=(-8*b*l*n1*n2)/((pi**2)*(((n1**2)-(n2**2))**2))
      endif
      return
      end Function PIB_1D_Modified_V_Element
+
 
      Real Function PIB_1D_T_Element(n1,n2,l,m)
      implicit none

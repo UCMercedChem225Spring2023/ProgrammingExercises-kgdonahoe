@@ -51,7 +51,7 @@
 
      Real Function PIB_1D_Modified_V_Element(n1,n2,l,b)
      implicit none
-     real,parameter::pi=3.1415926
+     real,parameter::pi=4*atan(1.0d0)
      integer::n1,n2
      real::l,b  
      if(n1==n2) then

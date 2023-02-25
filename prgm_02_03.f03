@@ -89,7 +89,7 @@
 
      Real Function PIB_1D_T_Element(n1,n2,l,m)
      implicit none
-     real,parameter::pi=3.1415926
+     real,parameter::pi=4*atan(1.0d0)
      integer,intent(in)::n1,n2
      real,intent(in)::m,l
      real::prefactor
